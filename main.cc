@@ -8,6 +8,7 @@ int main()
     //drogon::app().addListener("0.0.0.0",80);
     //Load config file
 
+
 #ifdef NDEBUG
     drogon::app().loadConfigFile("./config.json");
 #else
