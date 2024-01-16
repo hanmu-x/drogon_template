@@ -12,6 +12,7 @@ endforeach()
 
 
 add_library(${PROJECT_NAME} STATIC ${CORE_TOOL_SRC_FILES})
+target_link_libraries(${PROJECT_NAME} PUBLIC sutils)
 
 
 find_package(jsoncpp CONFIG REQUIRED)

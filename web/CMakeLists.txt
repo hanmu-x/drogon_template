@@ -4,8 +4,8 @@ project(drogon_web CXX)
 include(CheckIncludeFileCXX)
   set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake;${CMAKE_MODULE_PATH}")
 
-  include(silly_utils)
-  include_directories(silly_utils/su)
+#include(silly_utils)
+#include_directories(silly_utils/su)
 
 check_include_file_cxx(any HAS_ANY)
 check_include_file_cxx(string_view HAS_STRING_VIEW)
@@ -36,7 +36,6 @@ find_package(Drogon CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE Drogon::Drogon)
 # core dir
 target_link_libraries(${PROJECT_NAME} PUBLIC core_tool) 
-
 
 # ##############################################################################
 
